@@ -54,7 +54,7 @@ Includes and definitions for developing with graphite2.
 %build
 %cmake -DENABLE_COMPARE_RENDERER=OFF
 %make
-make docs
+#make docs
 
 #%%check
 #ctest <- barfs
@@ -75,7 +75,8 @@ rm -f %{buildroot}%{_libdir}/*.*a
 
 %files -n %{develname}
 %defattr(-,root,root,-)
-%doc ChangeLog build/doc/manual.html
+%doc ChangeLog
+#%%doc build/doc/manual.html
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*.cmake
 %{_includedir}/%{name}
