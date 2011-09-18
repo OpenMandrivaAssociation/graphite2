@@ -42,6 +42,7 @@ system implementation.
 Summary:	Development header files and libraries for graphite2
 Group:		Development/C++
 Requires:	%{libname} >= %{version}-%{release}
+Provides:	graphite2-devel = %{version}-%{release}
 
 %description -n	%{develname}
 Includes and definitions for developing with graphite2.
