@@ -4,18 +4,17 @@
 
 Summary:	Font rendering capabilities for complex non-Roman writing systems
 Name:		graphite2
-Version:	1.0.2
+Version:	1.0.3
 Release:	%mkrel 1
 Group:		System/Libraries
 License:	LGPLv2+
 URL:		http://sourceforge.net/projects/silgraphite/
 Source0:	http://downloads.sourceforge.net/silgraphite/graphite2-%{version}.tgz
-BuildRequires:	asciidoc >= 8.6.5
 BuildRequires:	cmake
-BuildRequires:	doxygen
 BuildRequires:	freetype2-devel
-BuildRequires:	tetex-latex
 BuildConflicts:	dblatex
+# required only if building the docs
+#BuildRequires:	asciidoc >= 8.6.5 tetex-latex doxygen
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -82,4 +81,3 @@ rm -f %{buildroot}%{_libdir}/*.*a
 %{_includedir}/%{name}
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
-
