@@ -1,3 +1,12 @@
+%if %mandriva_branch == Cooker
+# Cooker
+%define release %mkrel 1
+%else
+# Old distros
+%define subrel 1
+%define release %mkrel 0
+%endif
+
 %define major 2
 %define libname %mklibname graphite2_ %{major}
 %define develname %mklibname -d graphite2
@@ -5,7 +14,7 @@
 Summary:	Font rendering capabilities for complex non-Roman writing systems
 Name:		graphite2
 Version:	1.0.3
-Release:	%mkrel 1
+Release:	%{release}
 Group:		System/Libraries
 License:	LGPLv2+
 URL:		http://sourceforge.net/projects/silgraphite/
