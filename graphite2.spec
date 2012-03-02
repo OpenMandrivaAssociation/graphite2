@@ -13,7 +13,7 @@
 
 Summary:	Font rendering capabilities for complex non-Roman writing systems
 Name:		graphite2
-Version:	1.1.0
+Version:	1.1.1
 Release:	%{release}
 Group:		System/Libraries
 License:	LGPLv2+
