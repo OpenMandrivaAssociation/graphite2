@@ -5,7 +5,7 @@
 Summary:	Font rendering capabilities for complex non-Roman writing systems
 Name:		graphite2
 Version:	1.2.4
-Release:	4
+Release:	5
 Group:		System/Libraries
 License:	LGPLv2+
 URL:		http://sourceforge.net/projects/silgraphite/
