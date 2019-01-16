@@ -4,12 +4,12 @@
 
 Summary:	Font rendering capabilities for complex non-Roman writing systems
 Name:		graphite2
-Version:	1.3.10
-Release:	3
+Version:	1.3.13
+Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
 URL:		http://sourceforge.net/projects/silgraphite/
-Source0:	http://downloads.sourceforge.net/silgraphite/%{name}-%{version}.tgz
+Source0:	https://github.com/silnrsi/graphite/archive/1.3.13/graphite-%{version}.tar.gz
 BuildRequires:	cmake
 BuildRequires:	pkgconfig(freetype2)
 #BuildConflicts:	dblatex
@@ -75,5 +75,3 @@ Includes and definitions for developing with graphite2.
 %{_includedir}/%{name}
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
-
-
