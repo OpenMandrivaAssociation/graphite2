@@ -11,6 +11,8 @@ Group:		System/Libraries
 License:	LGPLv2+
 URL:		http://sourceforge.net/projects/silgraphite/
 Source0:	http://downloads.sourceforge.net/silgraphite/%{name}-%{version}.tgz
+Patch0:		https://src.fedoraproject.org/rpms/graphite2/raw/master/f/graphite-arm-nodefaultlibs.patch
+Patch1:		https://src.fedoraproject.org/rpms/graphite2/raw/master/f/graphite2-1.2.0-cmakepath.patch
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	pkgconfig(freetype2)
