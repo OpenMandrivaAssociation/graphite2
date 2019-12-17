@@ -58,8 +58,7 @@ Includes and definitions for developing with graphite2.
 #ctest <- barfs
 
 %install
-%nijna_build -C build
-
+%ninja_build
 
 %files
 %{_bindir}/*
