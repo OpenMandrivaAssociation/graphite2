@@ -71,7 +71,7 @@ Includes and definitions for developing with graphite2.
 %files -n %{develname}
 %doc ChangeLog
 %dir %{_datadir}/%{name}
-%{_datadir}/%{name}/*.cmake
+%{_libdir}/%{name}/*.cmake
 %{_includedir}/%{name}
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
