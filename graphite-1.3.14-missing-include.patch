@@ -1,0 +1,11 @@
+diff -up graphite2-1.3.14/tests/featuremap/featuremaptest.cpp.omv~ graphite2-1.3.14/tests/featuremap/featuremaptest.cpp
+--- graphite2-1.3.14/tests/featuremap/featuremaptest.cpp.omv~	2026-01-05 03:39:17.647874918 +0000
++++ graphite2-1.3.14/tests/featuremap/featuremaptest.cpp	2026-01-05 03:39:24.467893688 +0000
+@@ -27,6 +27,7 @@
+ #include <memory>
+ #include <string>
+ #include <vector>
++#include <cstdint>
+ 
+ #include <graphite2/Font.h>
+ 

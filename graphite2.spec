@@ -6,13 +6,15 @@
 Summary:	Font rendering capabilities for complex non-Roman writing systems
 Name:		graphite2
 Version:	1.3.14
-Release:	2
+Release:	3
 Group:		System/Libraries
 License:	LGPLv2+
-URL:		https://sourceforge.net/projects/silgraphite/
+URL:		https://graphite.sil.org/
+# Also: https://github.com/silnrsi/graphite
 Source0:	http://downloads.sourceforge.net/silgraphite/%{name}-%{version}.tgz
 Patch0:		https://src.fedoraproject.org/rpms/graphite2/raw/master/f/graphite-arm-nodefaultlibs.patch
 Patch1:		https://src.fedoraproject.org/rpms/graphite2/raw/master/f/graphite2-1.2.0-cmakepath.patch
+Patch2:		graphite-1.3.14-missing-include.patch
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	pkgconfig(freetype2)
